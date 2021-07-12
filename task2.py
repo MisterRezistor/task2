@@ -42,21 +42,21 @@ def clear():
 
 
 def make_digit_button(digit):
-    return tk.Button(text=digit, bd=5, font=('Arial', 15), command=lambda: add_digit(digit))
+    return tk.Button(text=digit, bd=5, font=('Times New Roman', 15), command=lambda: add_digit(digit))
 
 
 def make_operation_button(operation):
-    return tk.Button(text=operation, bd=5, font=('Arial', 15), fg='red',
+    return tk.Button(text=operation, bd=5, font=('Times New Roman', 15), fg='red',
                      command=lambda: add_operation(operation))
 
 
 def make_calc_button(operation):
-    return tk.Button(text=operation, bd=5, font=('Arial', 15), fg='red',
+    return tk.Button(text=operation, bd=5, font=('Times New Roman', 15), fg='red',
                      command=calculate)
 
 
 def make_clear_button(operation):
-    return tk.Button(text=operation, bd=5, font=('Arial', 15), fg='red',
+    return tk.Button(text=operation, bd=5, font=('Times New Roman', 15), fg='red',
                      command=clear)
 
 
@@ -72,12 +72,12 @@ def press_key(event):
 
 win = tk.Tk()
 win.geometry(f"240x270+100+200")
-win['bg'] = '#F9AD34'
+win['bg'] = '#A9AD20'
 win.title('Калькулятор')
 
 win.bind('<Key>', press_key)
 
-calc = tk.Entry(win, justify=tk.RIGHT, font=('Arial', 15), width=15)
+calc = tk.Entry(win, justify=tk.RIGHT, font=('Times New Roman', 15), width=15)
 calc.insert(0, "0")
 calc.grid(row=0, column=0, columnspan=4, stick='we', padx=5)
 
